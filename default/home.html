@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/universal_style.css">
+    <title>Microblog</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar_brand">
+            <img src="../microblog-log0.svg" alt="microblog logo">Microblog
+        </div>
+
+        <ul class="navbar_nav">
+            <li class="navbar_item"><a href="#" class="navbar_link">Recent</a></li>
+            <li class="navbar_item"><a href="#" class="navbar_link">Calendar</a></li>
+            <li class="navbar_item"><a href="#" class="navbar_link">Profile</a></li>
+        </ul>
+
+    </header>
+
+    <main>
+        <section id="posting">
+            <h1>Add new entry</h1>
+            <form class="form" action="../dataentry" method="POST">
+                <p class="form_input">
+                    <label for="dataentry" class="form_label">Posting Area</label>
+                    <textarea name="blog-data" id="data-blog" cols="30" rows="10" class="form_textarea">Enter your blog post here....... </textarea>
+                </p>
+                <button type="submit" class="form_submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="previous">
+            <h1>Recent Posts</h1>
+            <article>
+                <div>
+                    <h2>Post Heading</h2>
+                    <time datetime="07-28-2020">July 28</time>
+                </div>
+                <p>
+                    Draft for blog posts
+                </p>  
+
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_content">
+            <section class="left">
+                <a class="items"> @Jardel Mitchell</a>
+                <a class="items" href=""></a>
+            </section>
+            <section class="middle">
+
+            </section>
+            <section class="right">
+
+            </section>
+        </div>
+    </footer>
+    
+</body>
+</html>
