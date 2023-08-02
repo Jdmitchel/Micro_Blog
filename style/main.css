@@ -33,15 +33,20 @@ html{
     font-size: 18px;
     padding: 12px 20px;
     border: none;
-    background-color: azure;
+    background-color: rgba(49, 223, 73, 0.15);
     margin-bottom: 10px;
 }
 
 .form_submit{
-    background-color: rgb(218, 162, 59);
-    color: inherit;
+    background-color: rgb(59, 218, 80);
+    color: whitesmoke;
     font-size: 18px;
     border-radius: 20%;
+    border: none;
+    font-weight: bold;
+    padding: 5px 30px;
+    cursor: pointer;
+    
 }
 .form_submit:hover{
     background-color: brown;
