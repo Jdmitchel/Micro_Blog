@@ -6,6 +6,11 @@ html{
     box-sizing: border-box; /* sets the box size to the length of the */
 }
 
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
 .main{
     margin: 0 auto;
     width: 80%;
@@ -53,6 +58,20 @@ html{
 }
 
 
-user_entry{
+.user_entry{
     margin-top: 50px ;
+}
+
+.entry_title{
+    display: inline;
+    font-size: 18px;
+}
+
+.entry_date{
+    color: #5c6b70;
+}
+
+.entry_content{
+    font-size: 16px;
+    line-height: 150%;
 }
