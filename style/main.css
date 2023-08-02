@@ -51,3 +51,8 @@ html{
 .form_submit:hover{
     background-color: brown;
 }
+
+
+user_entry{
+    margin-top: 50px ;
+}
