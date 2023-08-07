@@ -35,16 +35,18 @@
 
         <section class="user_entry">
             <h1>Recent Posts</h1>
-            <article>
+            {% for entry in entries %}
+            <article class="entry">
                 <div>
-                    <h2 class="entry_title">Post Heading</h2>
-                    <time class="entry_date" datetime="07-28-2020"> July 28</time>
+                    <h2 class="entry_title">{{entry[0]| truncate(30, true)}}</h2>
+                    <time class="entry_date" datetime="07-28-2020"> {{entry[1]}}</time>
                 </div>
                 <p class="entry_content">
-                    Draft for blog posts
+                    {{entry[0]}}
                 </p>  
 
             </article>
+            {% endfor%}
         </section>
     </main>
 

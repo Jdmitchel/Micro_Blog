@@ -10,8 +10,8 @@ def home():
     if request.method == "POST":
         entry_content = request.form.get("blog-data")
         formatted = datetime.datetime.today().strftime("[%Y/%m/%d]")
-        print(entry_content, formatted)
-    return render_template("home.html")
+        entries.append((entry_content, formatted))
+    return render_template("home.html", entries = entries)
 
 
 
