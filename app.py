@@ -14,8 +14,12 @@ def create_app():
     app.db = client.MicroBlog
 
 
-    @app.route("/", methods=["GET", "POST"])
+    @app.route("/", methods=["GET"])
     def home():
+        return render_template("home.html")
+    
+    @app.route("/", methods=["POST"])
+    def addPost():
         if request.method == "POST":
             entry_content = request.form.get("blog-data")
             formatted = datetime.datetime.today().strftime("%Y/%m/%d")
@@ -27,9 +31,8 @@ def create_app():
             datetime.datetime.strptime(entry["date"], "%Y/%m/%d").strftime("%b %d"))
         for entry in app.db.Webdev.find({})
         ]
+        return render_template('home.html', entries=entries_dates)
 
-        return render_template("home.html", entries = entries_dates)
-    
     return app
 
 
