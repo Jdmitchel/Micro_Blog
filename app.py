@@ -16,7 +16,7 @@ def create_app():
 
     @app.route("/", methods=["GET"])
     def home():
-        return render_template("home.html")
+        return render_template('home.html')
     
     @app.route("/", methods=["POST"])
     def addPost():
